@@ -6,7 +6,6 @@ const WeatherApp = () => {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState('');
 
-  // Predefined list of Indian cities with their IDs and names
   const cities = [
     { name: 'New Delhi', id: 1269515 },
     { name: 'Mumbai', id: 1275339 },
@@ -28,7 +27,6 @@ const WeatherApp = () => {
         `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=8776970c88268c270d76dcc4f790972b`
       );
 
-      // If the city ID doesn't work, try fetching by city name
       if (!response.ok) {
         throw new Error('City not found by ID');
       }
@@ -42,7 +40,6 @@ const WeatherApp = () => {
         windSpeed: data.wind.speed,
       });
     } catch (err) {
-      // Fallback to city name if ID lookup fails
       try {
         const responseByName = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=8776970c88268c270d76dcc4f790972b`
@@ -103,12 +100,10 @@ const MagicalTimerAndInputBox = () => {
   const inputRef = useRef(null); // Ref for input box
   const timerRef = useRef(null); // Ref for storing the timer ID
 
-  // Effect to automatically focus on the input box when the page loads
   useEffect(() => {
     inputRef.current.focus();
   }, []);
 
-  // Start Timer
   const startTimer = () => {
     if (isTimerActive) return; // Don't start a new timer if one is already running
     setIsTimerActive(true);
@@ -125,15 +120,12 @@ const MagicalTimerAndInputBox = () => {
       });
     }, 1000);
   };
-
-  // Stop Timer
   const stopTimer = () => {
     clearInterval(timerRef.current);
     setIsTimerActive(false);
     setMessage(''); // Clear any message if stopped manually
   };
 
-  // Reset Timer
   const resetTimer = () => {
     clearInterval(timerRef.current);
     setIsTimerActive(false);
@@ -141,7 +133,6 @@ const MagicalTimerAndInputBox = () => {
     setMessage(''); // Clear any message
   };
 
-  // Refocus input box
   const focusInputBox = () => {
     inputRef.current.focus();
   };
