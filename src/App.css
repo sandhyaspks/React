@@ -1,0 +1,54 @@
+/* Container Style */
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+/* Input Box */
+.input-box {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Timer Section */
+.timer {
+  margin-top: 20px;
+}
+
+.message {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+}
