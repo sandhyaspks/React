@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "project",
+=======
+  "name": "magic",
+>>>>>>> b9958e05a3d41fe2159246a936f175b19cbf3168
   "private": true,
   "version": "0.0.0",
   "type": "module",
