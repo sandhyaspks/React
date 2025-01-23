@@ -1,0 +1,70 @@
+/* General Container */
+.weather-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #555;
+}
+
+/* City List */
+.city-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.city-item {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.city-item:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Weather Details */
+.weather-details {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.weather-details h2 {
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.weather-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
