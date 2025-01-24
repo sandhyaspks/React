@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General styles */
 body {
   font-family: 'Roboto', sans-serif; /* Changed font for a modern look */
@@ -79,4 +80,127 @@ button:disabled {
   text-align: center;
   font-size: 18px; /* Added font size for better visibility */
   color: #555; /* Subtle dark grey for text */
+=======
+<<<<<<< HEAD
+
+.weather-container {
+=======
+
+.container {
+>>>>>>> b9958e05a3d41fe2159246a936f175b19cbf3168
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+<<<<<<< HEAD
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #555;
+}
+
+
+.city-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.city-item {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.city-item:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.weather-details {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.weather-details h2 {
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.weather-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+=======
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+/* Input Box */
+.input-box {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.timer {
+  margin-top: 20px;
+}
+
+.message {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+>>>>>>> b9958e05a3d41fe2159246a936f175b19cbf3168
+>>>>>>> 83356848e5014a56b70db6a1dfb3fdeda12a5ded
 }

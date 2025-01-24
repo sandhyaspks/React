@@ -1,5 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "video",
+=======
+<<<<<<< HEAD
+  "name": "project",
+=======
+  "name": "magic",
+>>>>>>> b9958e05a3d41fe2159246a936f175b19cbf3168
+>>>>>>> 83356848e5014a56b70db6a1dfb3fdeda12a5ded
   "private": true,
   "version": "0.0.0",
   "type": "module",
