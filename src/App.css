@@ -1,0 +1,82 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Changed font for a modern look */
+  margin: 0;
+  padding: 0;
+  background-color: #e8f0fe; /* Updated background color to a soft blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px; /* Slightly larger for emphasis */
+}
+
+h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  text-align: center;
+  color: #444; /* Subtle dark grey for headings */
+}
+
+h2 span {
+  font-weight: bold;
+  color: #007bff; /* Matched to button primary color */
+}
+
+h2 span.red {
+  color: crimson; /* Changed red to crimson for a richer tone */
+}
+
+/* Input Box */
+input {
+  padding: 12px; /* Slightly larger padding */
+  font-size: 16px;
+  width: 320px; /* Increased width */
+  border: 2px solid #aaa; /* Lighter border */
+  border-radius: 8px; /* Rounded corners for modern style */
+  outline: none;
+  margin-bottom: 20px;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+input:focus {
+  border-color: #0056b3; /* Deep blue on focus */
+  box-shadow: 0 0 6px rgba(0, 86, 179, 0.5); /* Softer shadow */
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px; /* Larger padding for a modern button */
+  font-size: 15px;
+  color: #fff;
+  background-color: #007bff; /* Primary blue */
+  border: none;
+  border-radius: 6px; /* Slightly more rounded corners */
+  cursor: pointer;
+  margin: 8px; /* Increased margin for spacing */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+button:disabled {
+  background-color: #aaa; /* Softer grey for disabled state */
+  cursor: not-allowed;
+}
+
+/* Timer Section */
+.timer-container {
+  margin-top: 25px; /* Increased margin for better spacing */
+  text-align: center;
+  font-size: 18px; /* Added font size for better visibility */
+  color: #555; /* Subtle dark grey for text */
+}
